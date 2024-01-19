@@ -4,3 +4,26 @@ button {
   border: 1px solid #000;
   background-color: #f9f9f9;
 }
+
+.container-container {
+  max-width: 50%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(7, [col-start] 1fr [col-end]);
+  grid-template-rows: repeat(11, [row-start] 50px [row-end]);
+  grid-template-areas: "addC numC subC";
+  grid-auto-rows: 1fr;
+  grid-column-gap: 10px;
+}
+
+.add-button-container {
+  grid-area: addC;
+}
+
+.sub-button-container {
+  grid-area: subC;
+}
+
+.number-container {
+  grid-area: numC;
+}
