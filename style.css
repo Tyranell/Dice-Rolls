@@ -23,7 +23,6 @@ button,
   display: grid;
   margin: 0 auto;
   height: 100%;
-  grid-auto-rows: minmax(auto, 1fr);
   grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
 }
 
@@ -50,7 +49,6 @@ button,
     "aB18"
     "aB19"
     "aB20";
-  grid-auto-rows: 1fr;
 }
 
 #sub-button-container {
