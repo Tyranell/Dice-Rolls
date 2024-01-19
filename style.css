@@ -5,7 +5,7 @@ button {
   background-color: #f9f9f9;
 }
 
-.container-container {
+#container-container {
   max-width: 50%;
   display: grid;
   margin: 0 auto;
@@ -16,14 +16,14 @@ button {
   grid-column-gap: 10px;
 }
 
-.add-button-container {
+#add-button-container {
   grid-area: addC;
 }
 
-.sub-button-container {
+#sub-button-container {
   grid-area: subC;
 }
 
-.number-container {
+#number-container {
   grid-area: numC;
 }
