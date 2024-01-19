@@ -23,7 +23,7 @@ for (let i = 1; i <= numberOfSubtractionButtons; i++) {
 
 for (let i = 1; i <= numberOfNumbers; i++) {
   const numberFields = document.createElement("div");
-  numberFields.textContent = `${1}`;
+  numberFields.textContent = i;
   numberFields.setAttribute("id", `number${i}`);
   numberContainer.appendChild(numberFields);
 }
