@@ -47,8 +47,58 @@ button {
 
 #sub-button-container {
   grid-area: subC;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: repeat(20, auto);
+  grid-template-areas:
+    "sB1"
+    "sB2"
+    "sB3"
+    "sB4"
+    "sB5"
+    "sB6"
+    "sB7"
+    "sB8"
+    "sB9"
+    "sB10"
+    "sB11"
+    "sB12"
+    "sB13"
+    "sB14"
+    "sB15"
+    "sB16"
+    "sB17"
+    "sB18"
+    "sB19"
+    "sB20";
+  grid-auto-rows: 1fr;
 }
 
 #number-container {
   grid-area: numC;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: repeat(20, auto);
+  grid-template-areas:
+    "nu1"
+    "nu2"
+    "nu3"
+    "nu4"
+    "nu5"
+    "nu6"
+    "nu7"
+    "nu8"
+    "nu9"
+    "nu10"
+    "nu11"
+    "nu12"
+    "nu13"
+    "nu14"
+    "nu15"
+    "nu16"
+    "nu17"
+    "nu18"
+    "nu19"
+    "nu20";
+  grid-auto-rows: 1fr;
 }
