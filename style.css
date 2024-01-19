@@ -1,4 +1,5 @@
-button {
+button,
+.number {
   padding: 10px;
   text-align: center;
   border: 1px solid #000;
@@ -16,11 +17,16 @@ button {
   grid-column-gap: 10px;
 }
 
-#add-button-container {
-  grid-area: addC;
+#add-button-container,
+#sub-button-container,
+#number-container {
   display: grid;
   margin: 0 auto;
-  grid-template-rows: repeat(20, auto);
+  grid-auto-rows: minmax(auto, 1fr);
+}
+
+#add-button-container {
+  grid-area: addC;
   grid-template-areas:
     "aB1"
     "aB2"
@@ -47,9 +53,6 @@ button {
 
 #sub-button-container {
   grid-area: subC;
-  display: grid;
-  margin: 0 auto;
-  grid-template-rows: repeat(20, auto);
   grid-template-areas:
     "sB1"
     "sB2"
@@ -71,14 +74,10 @@ button {
     "sB18"
     "sB19"
     "sB20";
-  grid-auto-rows: 1fr;
 }
 
 #number-container {
   grid-area: numC;
-  display: grid;
-  margin: 0 auto;
-  grid-template-rows: repeat(20, auto);
   grid-template-areas:
     "nu1"
     "nu2"
@@ -100,5 +99,4 @@ button {
     "nu18"
     "nu19"
     "nu20";
-  grid-auto-rows: 1fr;
 }

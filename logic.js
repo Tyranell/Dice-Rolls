@@ -26,6 +26,7 @@ for (let i = 1; i <= numberOfSubtractionButtons; i++) {
 for (let i = 1; i <= numberOfNumbers; i++) {
   const numberFields = document.createElement("div");
   numberFields.textContent = i;
+  numberFields.setAttribute("class", "number");
   numberFields.setAttribute("id", `number${i}`);
   addButton.style.gridArea = `nu${i}`;
   numberContainer.appendChild(numberFields);
