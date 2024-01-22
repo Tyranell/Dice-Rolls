@@ -19,7 +19,7 @@ for (let i = 1; i <= numberOfSubtractionButtons; i++) {
   const subButton = document.createElement("button");
   subButton.textContent = "Subtract 1";
   subButton.setAttribute("id", `buttonS${i}`);
-  addButton.style.gridArea = `sB${i}`;
+  subButton.style.gridArea = `sB${i}`;
   subButtonContainer.appendChild(subButton);
 }
 
@@ -28,6 +28,6 @@ for (let i = 1; i <= numberOfNumbers; i++) {
   numberFields.textContent = i;
   numberFields.setAttribute("class", "number");
   numberFields.setAttribute("id", `number${i}`);
-  addButton.style.gridArea = `nu${i}`;
+  numberFields.style.gridArea = `nu${i}`;
   numberContainer.appendChild(numberFields);
 }

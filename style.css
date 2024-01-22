@@ -1,19 +1,25 @@
 button,
 .number {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.number {
   padding: 10px;
   text-align: center;
   border: 1px solid #000;
   background-color: #f9f9f9;
 }
 
-/*#container-container {
+#container-container {
   max-width: 50%;
   display: grid;
   margin: 0 auto;
-  grid-template-columns: auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "addC numC subC";
-  grid-column-gap: 10px;
+  column-gap: 0;
 }
 
 #add-button-container,
@@ -22,8 +28,7 @@ button,
   display: grid;
   margin: 0 auto;
   height: 100%;
- grid-template-rows: repeat(auto-fill, minmax(min-content, 1fr));
-}*/
+}
 
 #add-button-container {
   grid-area: addC;
